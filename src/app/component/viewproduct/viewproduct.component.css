@@ -1,0 +1,73 @@
+
+.col{
+    height:auto;
+    width:300px;
+    border: 1px solid black;
+    margin:15px;
+    padding:10px;
+    border-radius: 10px;
+}
+img{
+    height:200px;
+    width:200px;
+    margin-left:50px;
+}
+h2{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+   
+}
+.cols{
+    margin:7px;
+  
+}
+.col-sm-4{
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 85px;
+    height: 41px;
+    border-radius:20px;
+    border:none
+}
+table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+    margin-top:100px;
+   text-align: center;
+  }
+table{
+    width: 75%;
+    margin-left: 185px;
+    margin-top: 81px;
+
+}
+td{
+    height:35px
+}
+tr{
+    height: 35px;
+}
+.row{
+display: flex;
+justify-content: center;
+}
+.viewbtn{
+    background: rgb(141, 141, 239);
+    color:white
+}
+.updatebtn{
+    background:rgb(240, 123, 142);
+    color:white
+}
+.delbtn{
+    background:rgb(226, 67, 67);
+    color:white
+}

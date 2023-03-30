@@ -1,0 +1,29 @@
+.row{
+    display: flex;
+    justify-content: center;
+}
+.col{
+    height:500px;
+    width:600px;
+  
+    margin:10px;
+    padding:30px;
+    padding-top:50px
+   
+}
+p{
+    font-size: larger;
+    margin-left: -113px;
+    margin-top: 10px;
+    width: 402px;
+}
+img{
+    margin-left: 96px;
+}
+
+h2{
+    margin-left: 196px;
+}
+hr{
+    width:400px
+}

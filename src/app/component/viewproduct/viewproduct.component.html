@@ -1,0 +1,50 @@
+<!-- <div class="row">
+    <div class="col-sm-4">
+        <div class="col" *ngFor="let u of data">
+            <h2>  {{u.pname}}</h2>
+            <hr>
+           <img src="{{u.imgurl}}">   <br>
+            
+              <h4>₹.{{u.prodprice}}</h4>
+              <div class="btn">
+                  <div class="cols">
+                      <button class="submit" (click)="updateprod(u._id)">Update</button>
+                  </div>
+                  <div class="cols">
+                      <button class="submit" (click)="deleteprod(u._id)">Delete</button>
+                  </div>
+              </div>
+          </div>
+    </div>
+  
+    
+</div> -->
+<table>
+    <tr>
+        
+      <th style="width:10%">Sr. No.</th>
+      <th style="width:20%">Product Name</th>
+      <th style="width:20%">Action</th>
+     
+    </tr>
+    
+    <tr *ngFor="let u of data; let i = index">
+      <td>{{i+1}}</td>
+      <td>{{u.pname}}</td>
+        <td>
+            <div class="row">
+
+                <div class="cols">
+                    <button class="viewbtn" (click)="viewprod(u._id)">View</button>
+                </div>
+                    <div class="cols">
+                        <button class="updatebtn" (click)="updateprod(u._id)">Update</button>
+                    </div>
+                    <div class="cols">
+                        <button class="delbtn" (click)="deleteprod(u._id)">Delete</button>
+                    </div>
+            
+          </div>
+        </td>
+    </tr>
+  </table>

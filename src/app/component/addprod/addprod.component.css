@@ -1,0 +1,26 @@
+
+ button{
+  height: 44px;
+ 
+  border-radius: 10px;
+  background: #e9670b;
+  color:white;
+  width: 96px;
+  margin-left: 105px;
+  border: none;
+} 
+.container{
+  display: flex;
+  width: 100%;
+  margin-top: 42px;
+  margin-left: -60px;
+  justify-content: center;
+
+}
+h1{
+  text-align: center;
+}
+input{
+  height: 37px;
+  width: 160%;
+}

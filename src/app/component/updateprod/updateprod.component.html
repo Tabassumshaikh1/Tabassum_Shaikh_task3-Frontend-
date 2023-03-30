@@ -1,0 +1,112 @@
+
+<h1>Update Product</h1>
+  <div class="container" style="height: auto">
+  
+    <div>
+    <form [formGroup]="myForm" (ngSubmit)="postData()">
+      <div class="mb-3">
+        <div class="form-group">
+          <label>Product Name</label>
+          <div class="a1">
+            <input
+              type="email"
+              class="form-control"
+            [(ngModel)]="data.pname"
+              id="pname"
+              formControlName="pname"
+            />
+          
+          </div>
+          <div
+            class="form-control is-invalid"
+            *ngIf="fdata['pname'].invalid && fdata['pname'].touched"
+          >
+            <div
+              *ngIf="fdata['pname'].errors && fdata['pname'].errors['required']"
+            >
+              pname is required
+            </div>
+            <div
+              *ngIf="fdata['pname'].errors && fdata['pname'].errors['pattern']"
+            >
+              Enter Correct pname!!
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <div class="mb-3">
+        <div class="form-group">
+          <label>Product Image Url</label>
+          <div class="a1">
+            <input
+              type="text"
+              class="form-control"
+              [(ngModel)]="data.imgurl"
+              id="imgurl"
+              formControlName="imgurl"
+            />
+       
+          </div>
+          <div
+            class="form-control is-invalid"
+            *ngIf="fdata['imgurl'].invalid && fdata['imgurl'].touched"
+          >
+            <div
+              *ngIf="
+                fdata['imgurl'].errors && fdata['imgurl'].errors['required']
+              "
+            >
+              imgurl is required
+            </div>
+        
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="mb-3">
+        <div class="form-group">
+          <label>Product Price</label>
+          <div class="a1">
+            <input
+              type="text"
+              class="form-control"
+              [(ngModel)]="data.prodprice"
+              id="imgurl"
+              formControlName="prodprice"
+            />
+       
+          </div>
+          <div
+            class="form-control is-invalid"
+            *ngIf="fdata['prodprice'].invalid && fdata['prodprice'].touched"
+          >
+            <div
+              *ngIf="
+                fdata['prodprice'].errors && fdata['prodprice'].errors['required']
+              "
+            >
+              Price is required
+            </div>
+            <!-- <div
+              *ngIf="
+                fdata['prodprice'].errors && fdata['prodprice'].errors['pattern']
+              "
+            >
+              Enter Correct Price!!
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <button type="submit" >Update Product</button>
+   
+    
+  
+    </form>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
